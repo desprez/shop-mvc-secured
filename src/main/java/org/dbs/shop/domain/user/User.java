@@ -32,12 +32,11 @@ public class User {
 	private String email;
 
 	@Column(nullable = false)
-	@Size(min = 4)
 	private String password;
 
 	@ElementCollection
 	@Enumerated(EnumType.STRING)
-	private Set<RoleTypeEnum> roles = new HashSet<>();;
+	private Set<RoleTypeEnum> roles = new HashSet<>();
 
 	/**
 	 * Needed by hibernate

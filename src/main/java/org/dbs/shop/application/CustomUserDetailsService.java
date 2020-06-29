@@ -23,6 +23,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 	@Autowired
 	private UserRepository userRepository;
 
+	// ici je transforme mes objets du domain en objets internes de Spring Security
 	@Override
 	public UserDetails loadUserByUsername(final String userName) throws UsernameNotFoundException {
 
